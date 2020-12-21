@@ -1,1 +1,1 @@
-# paytm-django-payment-gateway
+# Django payment gateway integration
