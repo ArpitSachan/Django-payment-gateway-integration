@@ -20,5 +20,6 @@ from django.contrib.auth import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'login/$', views.login, name='login'),
-    url(r'logout/$', views.logout, name='logout', kwargs={'next_page': '/'})
+    url(r'account/logout/$', views.logout, name='logout', kwargs={'next_page': '/'}),
+    url(r'', include('paytm.urls')),
 ]
